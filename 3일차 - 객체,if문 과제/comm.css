@@ -107,6 +107,13 @@ label + label {
   width: calc(100% - 72px);
 }
 
+.quote {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* 슬라이드 토글  */
 .box2 {
   width: 100%;
