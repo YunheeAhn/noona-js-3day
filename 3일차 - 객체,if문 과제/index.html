@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="comm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>{;} 3일차 과제</title>
+</head>
+<body>
+    <div class="head">
+        <h1>{;} 3일차 과제</h1>
+    </div>
+
+        <div class="answerWrap">
+            <div class="wrap wrap1">
+                <h2>문제1.유저가 입력하는 숫자가 0인지 음수인지 양수인지 판단하는 프로그램을 만드시오.</h2>
+                <div class="box">
+                    <input type="number" id="numberInput" placeholder="숫자를 입력하세요">
+                    <button onclick="checkNumber()">확인</button>
+                </div>
+                <div class="box2">
+                    <button onclick="toggleSlide(1)" class="button2">실제 문제 정답 ></button>
+                    <div class="slideWrap">
+                        <p>
+                            <span style="color:red; font-size:14px;">*아래의 코드를 참고하여 인풋창에 숫자 입력 시 0인지, 음수인지 양수인지를 판단하여 얼럿창에 보여지게 했습니다. </span><br>
+                        let num = -1; <br><br>  
+
+                        if (num === 0) {<br>
+                            console.log("0입니다.");<br>
+                        } else if (num > 0) {<br>
+                            console.log("양수입니다.");<br>
+                        } else {<br>
+                            console.log("음수입니다.");<br>
+                        }
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap wrap2">
+                <h2>문제2.나는 대학교 교수다. 레포트 점수에 따라 등급을 매기는 프로그램을 만드시오.</h2>
+                <div class="box">
+                    <input type="number" id="scoreInput" placeholder="점수를 입력하세요">
+                    <button onclick="checkScore()">확인</button>
+                </div>
+                <div class="box2">
+                    <button onclick="toggleSlide(2)" class="button2">실제 문제 정답 ></button>
+                    <div class="slideWrap">
+                        <p>
+                        <span style="color:red; font-size:14px;">*아래의 코드를 참고하여 숫자 입력 시 등급이 얼럿 창에 보여지게 했습니다. </span><br>
+                        let score = 80; <br><br> 
+                        if (score >= 90) {<br> 
+                            console.log("grade = A");<br> 
+                        } else if (score >= 80) {<br> 
+                            console.log("grade = B");<br> 
+                        } else if (score >= 70) {<br> 
+                            console.log("grade = C");<br> 
+                        } else if (score >= 60) {<br> 
+                            console.log("grade = D");<br> 
+                        } else {<br> 
+                            console.log("grade = F");<br> 
+                        }
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap wrap3">
+                <h2>문제3.Javascript와 React 둘 다 할 줄 안다면 "합격!" Javascript와 React 둘 중 하나만 할 줄 안다면 "예비", 두 스킬이 없다면 "탈락"을 보여주는 프로그램을 짜시오.</h2>
+                
+                <p>지원자가 사용 가능한 스킬을 모두 체크하시오</p>
+                <div class="box">
+                    <div class="labelWrap">
+                        <label><input type="checkbox" id="html"> Html</label>
+                        <label><input type="checkbox" id="css"> Css</label>
+                        <label><input type="checkbox" id="js"> JavaScript</label>
+                        <label><input type="checkbox" id="react"> React</label>
+                    </div>
+                    <button onclick="checkResult()">확인</button>
+                </div>
+                <div class="box2">
+                    <button onclick="toggleSlide(3)" class="button2">실제 문제 정답 ></button>
+                    <div class="slideWrap">
+                        <p>
+                            <span style="color:red; font-size:14px;">*아래의 코드를 참고하여 체크된 스킬에 따라 합격, 예비, 탈락 얼럿창이 보여지게 했습니다. </span><br>
+                            제공된 배열 <br>
+                            let skills = ["HTML","CSS","Javascript","React"] <br><br> 
+
+                            if(skills.includes("Javascript") && skills.includes("React")){<br>
+                                console.log("합격");<br>
+                            } else if(skills.includes("Javascript") || skills.includes("React")){<br>
+                                console.log("예비");<br>
+                            } else{<br>
+                                console.log("탈락");<br>    
+                            }
+                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
