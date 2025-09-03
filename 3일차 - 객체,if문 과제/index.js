@@ -50,7 +50,7 @@ function checkResult() {
     } else if (knowsHtml || knowsCss) {
         
     } else {
-        alert("탈락");
+        alert("탈락"); 
     }
 }
 
