@@ -1,0 +1,173 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.head {
+  margin: 0 auto;
+
+  text-align: center;
+
+  background: rgb(144, 19, 254);
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  display: block;
+  padding: 20px 0;
+  color: white;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 22px;
+  padding-top: 0;
+}
+
+input {
+  height: 30px;
+  width: calc(100% - 72px);
+}
+
+input::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  padding-left: 5px;
+}
+
+button {
+  line-height: 32px;
+  border: none;
+  padding: 2px;
+  background: rgb(144, 19, 254);
+  width: 52px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+button.w100 {
+  width: 100% !important;
+}
+
+button:hover {
+  color: rgb(144, 19, 254);
+  background: white;
+  border: 1px solid rgb(144, 19, 254);
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+}
+
+label > input[type="checkbox" i] {
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+}
+
+label + label {
+  margin-left: 10px;
+}
+
+.answerWrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.wrap {
+  padding: 20px;
+}
+
+.wrap + .wrap {
+  margin-bottom: 20px;
+}
+
+.wrap:last-of-type {
+  margin-bottom: 0;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.box > button {
+  margin-left: auto;
+}
+
+.labelWrap {
+  width: calc(100% - 72px);
+}
+
+.quote {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 슬라이드 토글  */
+.box2 {
+  width: 100%;
+}
+.button2 {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 12px;
+  background: rgb(59 19 254);
+  opacity: 0.6;
+}
+.button2:hover {
+  border-color: rgb(59 19 254);
+  color: rgb(59 19 254);
+}
+.slideWrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  background-color: #f0f0f0;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.slideWrap.open {
+  max-height: 600px;
+  padding: 10px;
+}
+
+@media (max-width: 680px) {
+  .answerWrap {
+    width: 100%;
+  }
+  input {
+    width: auto;
+  }
+  button {
+    width: 100%;
+    margin-top: 8px !important;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  label {
+    width: calc(50% - 21px);
+  }
+
+  label + label {
+    margin-left: 0;
+  }
+}

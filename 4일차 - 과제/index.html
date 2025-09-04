@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/4일차 - 과제/index.js"></script>
+    <link rel="stylesheet" href="/4일차 - 과제/comm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>{;} 4일차 과제</title> 
+</head>
+<body>
+    <div class="head">
+        <h1>{;} 4일차 과제</h1>
+    </div>
+        <div class="answerWrap">
+            <div class="wrap wrap1">
+                <h2>문제1.1부터 100까지 더하는 for문을 만들고 결과를 출력하시오.</h2>
+                <p>확인 버튼을 누르면 1~100까지 더한 값이 얼럿창에 표시 됩니다.</p>
+                <div class="box">
+                    <button onclick="plusNumber()" class="button w100">확인</button>
+                </div>
+                <div class="box2">
+                    <button onclick="toggleSlide(1)" class="button2">실제 문제 정답 ></button>
+                    <div class="slideWrap">
+                        <p>
+                        let sum = 0<br>
+                        for(let i=1; i&lt;=100; i++){<br>
+                            sum+=i<br>
+                        }<br>
+                        console.log(sum)
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap wrap2">
+                <h2>문제2.1부터 100까지 홀수만 출력하자.</h2>
+
+                <div class="box">
+                    <button onclick="checkNumber()"  class="button w100">확인</button>
+                </div>
+                <div class="box2">
+                    <button onclick="toggleSlide(2)" class="button2">실제 문제 정답 ></button>
+                    <div class="slideWrap">
+                        <p>
+                        for (let i = 1; i &lt;= 100; i += 2) {<br>
+                            console.log(i)<br>
+                        }
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap wrap3">
+                <h2>문제3.1부터 50까지 369결과를 프린트하자.</h2>
+                <div class="box">
+                    <input type="number" id="numberInput" placeholder="1~50까지의 숫자를 입력하세요">
+                    <button onclick="check369()">확인</button>
+                </div>
+                <div class="box2">
+                    <button onclick="toggleSlide(3)" class="button2">실제 문제 정답 ></button>
+                    <div class="slideWrap">
+                        <p>
+                            <span style="color:red; font-size:14px;">*아래의 코드를 참고하여 369 결과를 알 수 있게 했습니다. </span><br>
+                            <br>
+                            let num = 30<br>
+                            if (!num || num &lt; 1 || num > 50) {<br>
+                                console.log("1~50 사이의 숫자를 입력해주세요.");<br>
+                            }<br>
+                            <br>
+                            let strNum = String(num);<br>
+                            let result = 0;<br>
+                            <br>
+                            for (let i of strNum) {<br>
+                                if (i === "3" || i === "6" || i === "9") {<br>
+                                    result++;<br>
+                                }<br>
+                            }<br>
+                            <br>
+                            if (result === 0) {<br>
+                                console.log(num);<br>
+                            } else {<br>
+                                console.log("짝".repeat(result));<br>
+                            }
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap wrap4">
+                <h2>문제4. 주어진 숫자가 소수이면 true 아니면 false를 출력하는 프로그램을 짜시오.</h2>
+                <p>소수란? 1과 자기 자신외에는 나눌 수 없는 1보다 큰 자연수</p>
+                <div class="box">
+                    <input type="number" id="primeInput" placeholder="숫자를 입력하세요">
+                    <button onclick="checkPrime()">확인</button>
+                </div>
+                <div class="box2">
+                    <button onclick="toggleSlide(4)" class="button2">실제 문제 정답 ></button>
+                    <div class="slideWrap">
+                        <p>
+                            let primeNum = 33<br>
+                            let isPrime = true <br>
+
+                            if(primeNum &lt;= 1 ) {<br>
+                                <br>
+                                <br>
+                            } else {<br>
+                                for(let i=2; i &lt; primeNum; i++){<br>
+                                    if(primeNum % 1 == 0){<br>
+                                        isPrime =  false <br>
+                                    } <br>
+                                }<br>
+                            }<br>
+                            console.log(isPrime)<br>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
