@@ -48,19 +48,24 @@ function check369() {
 function checkPrime() {
     const primeNum = Number(document.getElementById("primeInput").value);
     
-    let isPrime = "소수 입니다";
+    let isPrime = "소수입니다";
 
     if(primeNum <= 1 ) {
+        alert(primeNum + "은 소수가 아닙니다")
+        return;
 
     } else {
         for(let i=2; i < primeNum; i++){
-            if(primeNum % 1 == 0){
+            if(primeNum % i == 0){
                 isPrime =  "소수가 아닙니다" 
             } 
         }
     }
     alert(primeNum + "은 " + isPrime)
 }
+
+
+
 
 
 
