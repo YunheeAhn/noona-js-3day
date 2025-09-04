@@ -43,16 +43,18 @@ function checkResult() {
         return;
     }
 
+    // fail 받았던 코드
     // if (knowsJS && knowsReact) {
     //     alert("합격!");
     // } else if (knowsJS || knowsReact) {
     //     alert("예비");
-    // } else if (knowsHtml || knowsCss) {
+    // } else if (knowsHtml || knowsCss) { //이 부분이 fail 이유였던 것 같습니다
         
     // } else {
     //     alert("탈락"); 
     // }
 
+    // 수정한 코드 
     if (knowsJS && knowsReact) {
         alert("합격!");
     } else if (knowsJS || knowsReact) {
