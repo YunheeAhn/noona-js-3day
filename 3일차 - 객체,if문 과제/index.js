@@ -43,14 +43,22 @@ function checkResult() {
         return;
     }
 
+    // if (knowsJS && knowsReact) {
+    //     alert("합격!");
+    // } else if (knowsJS || knowsReact) {
+    //     alert("예비");
+    // } else if (knowsHtml || knowsCss) {
+        
+    // } else {
+    //     alert("탈락"); 
+    // }
+
     if (knowsJS && knowsReact) {
         alert("합격!");
     } else if (knowsJS || knowsReact) {
         alert("예비");
-    } else if (knowsHtml || knowsCss) {
-        
     } else {
-        alert("탈락"); 
+        alert("탈락");
     }
 }
 

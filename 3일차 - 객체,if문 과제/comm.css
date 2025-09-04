@@ -139,7 +139,7 @@ label + label {
 }
 
 .slideWrap.open {
-  max-height: 500px; /* 충분히 큰 값으로 설정 */
+  max-height: 500px;
   padding: 10px;
 }
 
